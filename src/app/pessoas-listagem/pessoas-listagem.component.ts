@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PessoasListagemComponent implements OnInit {
 
+  pessoas = [
+    { id: 1, nome: 'Denys', email: 'denys@gmail.com' },
+    { id: 2, nome: 'Mayara', email: 'mayara@gmail.com' }
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

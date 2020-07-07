@@ -1,1 +1,7 @@
-<p>pessoas-listagem works!</p>
+<h2>Lista</h2>
+
+<ul>
+    <li *ngFor="let p of pessoas">
+        {{p.id}} - {{p.nome}} - {{p.email}}
+    </li>
+</ul>
