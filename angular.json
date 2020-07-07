@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "desafio-fullstack1"
+    }
+  },
+  "defaultProject": "desafio-fullstack1",
+  "cli": {
+    "analytics": false
+  }
 }
