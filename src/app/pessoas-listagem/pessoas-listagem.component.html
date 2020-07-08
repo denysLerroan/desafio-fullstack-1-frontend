@@ -5,3 +5,26 @@
         {{p.id}} - {{p.nome}} - {{p.peso}} - {{p.altura}} - {{p.nacionalidade}}
     </li>
 </ul>
+
+<table class="table table-dark table-bordered texto">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Peso</th>
+            <th>Altura</th>
+            <th>Nacionalidade</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let p of pessoas">
+            <td>{{p.id}}</td>
+            <td>{{p.nome}}</td>
+            <td>{{p.peso}}</td>
+            <td>{{p.altura}}</td>
+            <td>{{p.nacionalidade}}</td>
+        </tr>
+    </tbody>
+
+</table>
