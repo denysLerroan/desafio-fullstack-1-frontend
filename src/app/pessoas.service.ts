@@ -13,17 +13,8 @@ export class PessoasService {
 
   constructor(private http: HttpClient) { }
 
-  listar(): Observable<Pessoas[]> {
-    return this.http.get<GetResponse>(this.pessoasUrl).pipe(
-      map(response => response._embedded.pessoas)
-    );
+  listar() {
+    return this.http.get<any[]>(`${this.pessoasUrl}`); 
   }
+
 }
-
-interface GetResponse {
-  _embedded: {
-    pessoas: Pessoas[];
-  }
-}
-
-
